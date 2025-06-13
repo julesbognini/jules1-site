@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galerie – Hôtels de Bobo-Dioulasso</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+      background:url('bg.png');
+      color:#333;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:20px;
+    }
+
+    h1{
+      margin-bottom:25px;
+      text-align:center;
+      color:#000;
+    }
+
+    /* Grille responsive */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      width:100%;
+      max-width:1200px;
+    }
+
+    figure{
+      background:url('bg.png');
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.08);
+      overflow:hidden;
+      transition:transform .25s;
+    }
+
+    figure:hover{
+      transform:scale(1.03);
+    }
+
+    figure img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    figcaption{
+      padding:10px 15px;
+      font-weight:bold;
+      text-align:center;
+      font-size:0.95rem;
+    }
+
+    /* Bouton retour */
+    .back{
+      display:inline-block;
+      margin-top:30px;
+      padding:12px 25px;
+      background:url('bg.png');
+      image:url('bg.png');
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:bold;
+      transition:background .3s;
+    }
+
+    .back:hover{
+      background:url('bg.png');
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galerie de quelques Hôtels de Bobo-Dioulasso</h1>
+
+  <div class="gallery">
+    <figure>
+       <a href="reservation.html">
+       <img src="sissiman.jpg" alt="Hôtel Sissiman"></a>
+      <figcaption>Hôtel Sissiman</figcaption>
+      <p>Hôtel 3 étoiles très apprécié pour sa sécurité et son confort. Idéal pour les séjours d'affaires ou de détente.</p>
+    </figure>
+
+    <figure>
+     <a href="reservation.html">
+     <img src="villa_rose.jpg" alt="Villa Rose"></a>
+      <figcaption>Villa Rose</figcaption>
+      <p>Hôtel 3 étoiles avec jardin, restaurant et ambiance artistique. Très bien noté pour sa propreté et son accueil chaleureux.</p>
+    </figure>
+    
+    <figure>
+     <a href="reservation.html">
+     <img src="villa_soudan.jpg" alt="Villa Soudan"></a>
+      <figcaption>Villa Soudan</figcaption>
+      <p>Maison d'hôtes avec jardin et terrasse, offrant des chambres climatisées et une atmosphère conviviale.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="hotel_auberge.jpg" alt="Hôtel L'Auberge"></a>
+      <figcaption>Hôtel L'Auberge</figcaption>
+      <p>Hôtel historique avec piscine extérieure, salle de sport et jardin. Apprécié pour son charme authentique et son mobilier en bois local.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="iba.jpg" alt="IBA Hotel"></a>
+      <figcaption>IBA Hotel</figcaption>
+      <p>Hôtel bien situé avec une belle vue et un service de qualité. Bon choix pour un séjour relaxant.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="villa_bobo.jpg" alt="Villa Bobo"></a>
+      <figcaption>Villa Bobo</figcaption>
+      <p>Maison d'hôtes avec piscine et jardin, offrant un cadre reposant et une cuisine excellente.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="2palmiers.jpg" alt="Hôtel Les 2 Palmiers"></a>
+      <figcaption>Hôtel Les 2 Palmiers</figcaption>
+      <p>Hôtel offrant un excellent accueil et une hospitalité remarquable. Un lieu agréable pour se détendre.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="pacifique.jpeg" alt="Pacific Hôtel Bobo"></a>
+      <figcaption>Pacific Hôtel Bobo</figcaption>
+      <p>Hôtel offrant un bon rapport qualité-prix, avec des chambres confortables et un service satisfaisant.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="watinoma.png" alt="Hôtel Watinoma"></a>
+      <figcaption>Hôtel Watinoma</figcaption>
+      <p>Hôtel apprécié pour son ambiance paisible et son service attentionné.</p>
+    </figure>
+
+<figure>
+     <a href="reservation.html">
+     <img src="ran.jpg" alt="RAN Hôtel Somketa"></a>
+      <figcaption>RAN Hôtel Somketa</figcaption>
+      <p>Hôtel offrant des installations modernes et un service professionnel, adapté aux voyageurs d'affaires.</p>
+    </figure> 
+  </div>
+
+  <a href="Accueil.html" style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#007BFF; color:white; border-radius:5px; text-decoration:none;">← Retour</a>
+
+
+</body>
+</html>

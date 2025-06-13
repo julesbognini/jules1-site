@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Réservation Hôtel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('bg.png');
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .reservation-container {
+      background-image: url('bg.png');
+      padding: 25px 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 12px 0 6px 0;
+      font-weight: bold;
+      color: #222;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .checkbox-group, .radio-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-image: url('bg.png');
+    }
+  </style>
+</head>
+<body>
+  <div class="reservation-container">
+    <h1>Formulaire de Réservation d'Hôtel</h1>
+    <form action="#" method="post">
+      <label for="nom">Nom *</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom " required />
+      
+      <label for="nom">Prenom(s) *</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" required />
+
+
+      <label for="email">Adresse email *</label>
+      <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required />
+
+      <label for="tel">Numéro de téléphone *</label>
+      <input type="tel" id="tel" name="tel" placeholder="+226 00 00 00 00" pattern="[+0-9\s\-]{8,15}" required />
+
+      <label for="date-arrivee">Date d'arrivée *</label>
+      <input type="date" id="date-arrivee" name="date_arrivee" required />
+
+      <label for="date-depart">Date de départ *</label>
+      <input type="date" id="date-depart" name="date_depart" required />
+
+      <label for="nb-personnes">Nombre de personnes *</label>
+      <input type="number" id="nb-personnes" name="nb_personnes" min="1" max="10" value="1" required />
+
+      <label for="type-chambre">Type de chambre *</label>
+      <select id="type-chambre" name="type_chambre" required>
+        <option value="" disabled selected>-- Choisissez une option --</option>
+        <option value="simple">Simple</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+        <option value="familiale">Familiale</option>
+      </select>
+
+      <label for="preferences">Préférences supplémentaires</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="preferences" value="fumeur" /> Chambre fumeur</label>
+        <label><input type="checkbox" name="preferences" value="non-fumeur" /> Chambre non-fumeur</label>
+        <label><input type="checkbox" name="preferences" value="lit-bebe" /> Lit bébé</label>
+        <label><input type="checkbox" name="preferences" value="acces-handicape" /> Accès handicapé</label>
+      </div>
+
+      <label for="paiement">Mode de paiement préféré *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="paiement" value="carte" required /> Carte bancaire</label>
+        <label><input type="radio" name="paiement" value="especes" /> Espèces</label>
+        <label><input type="radio" name="paiement" value="cheque" /> Chèque</label>
+      </div>
+
+      <label for="remarques">Remarques / demandes spéciales</label>
+      <textarea id="remarques" name="remarques" rows="4" placeholder="Ecrivez ici vos demandes particulières..."></textarea>
+
+      <button type="submit">Réserver</button>
+    </form>
+  </div>
+</body>
+</html>

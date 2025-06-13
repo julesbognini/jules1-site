@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galerie – Sites patrimoniaux de Bobo-Dioulasso</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+      background:url('bg.png');
+      color:#333;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:20px;
+    }
+
+    h1{
+      margin-bottom:25px;
+      text-align:center;
+      color:#000;
+    }
+
+    /* Grille responsive */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      width:100%;
+      max-width:1200px;
+    }
+
+    figure{
+      background:url('bg.png');
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.08);
+      overflow:hidden;
+      transition:transform .25s;
+    }
+
+    figure:hover{
+      transform:scale(1.03);
+    }
+
+    figure img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    figcaption{
+      padding:10px 15px;
+      font-weight:bold;
+      text-align:center;
+      font-size:0.95rem;
+    }
+
+    /* Bouton retour */
+    .back{
+      display:inline-block;
+      margin-top:30px;
+      padding:12px 25px;
+      background:url('bg.png');
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:bold;
+      transition:background .3s;
+    }
+
+    .back:hover{
+      background:url('bg.png');
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galerie des sites patrimoniaux de Bobo-Dioulasso</h1>
+
+  <div class="gallery">
+    <figure>
+       <img src="Mosquée.jpg" alt="Grande Mosquée de Dioulassoba">
+      <figcaption>Grande Mosquée de Dioulassoba</figcaption>
+    </figure>
+
+    <figure>
+     <img src="musée.jpg" alt="Musée Communal Sogossira Sanon">
+      <figcaption>Le Musée Communal Sogossira Sanon</figcaption>
+    </figure>
+    
+    <figure>
+     <img src="maison_culture.jpg" alt="Maison de la culture">
+      <figcaption>La Maison de la culture</figcaption>
+    </figure>
+
+<figure>
+     <img src="marché.jpg" alt="Marché Central de Bobo-Dioulasso">
+      <figcaption>Le Marché Central de Bobo-Dioulasso</figcaption>
+    </figure>
+
+<figure>
+     <img src="village_artisanal.jpg" alt="village Artisanal">
+      <figcaption>Le village Artisanal</figcaption>
+    </figure>
+
+<figure>
+     <img src="guimbi.jpg" alt="Mausolée Guimbi OUATTARA">
+      <figcaption>Le Mausolée Guimbi OUATTARA</figcaption>
+    </figure>
+
+<figure>
+     <img src="lourdes.jpg" alt="Paroisse Cathédrale Notre-Dame-De-Lourdes">
+      <figcaption>Paroisse Cathédrale Notre-Dame-De-Lourdes</figcaption>
+    </figure>
+
+<figure>
+     <img src="guinguette.jpg" alt="Guinguette de Dinderesso">
+      <figcaption>La Guinguette de Dinderesso</figcaption>
+    </figure>
+
+<figure>
+     <img src="sitarail.jpg" alt="Gare Ferroviaire SITARAIL">
+      <figcaption>La Gare Ferroviaire SITARAIL</figcaption>
+    </figure>
+
+<figure>
+     <img src="monument.jpg" alt="Monument de la Paix">
+      <figcaption>Le Monument de la Paix</figcaption>
+    </figure> 
+  </div>
+
+  <a href="AccuEil.html" style="display:inline-block; margin-top:20px; padding:10px 20px; background-color:#007BFF; color:white; border-radius:5px; text-decoration:none;">← Retour à la liste</a>
+
+
+</body>
+</html>
